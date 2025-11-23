@@ -1,73 +1,33 @@
-# React + TypeScript + Vite
+# UI Playground: Una demostración de colaboración Humano-IA
+![Project Banner](https://ui-playground-portfolio.web.app/og-image.png) > Una colección de componentes de interfaz moderna, diseñada para demostrar el potencial de la metodología AI-First en el desarrollo de software.
+🔗 **Sitio en Vivo:** [https://ui-playground-portfolio.web.app](https://ui-playground-portfolio.web.app)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🧠 Metodología AI-First
+Este proyecto no es solo una galería de componentes; es una prueba de concepto sobre el futuro del desarrollo de software. Fue construido utilizando una metodología **AI-First**, redefiniendo los roles tradicionales:
+* **Director de Diseño y Auditor de UX (Humano):** Javier Espinoza Padilla
+    * Responsable de la visión creativa, la definición de requisitos, la auditoría de experiencia de usuario y el ajuste fino de la estética (márgenes, espaciados, "look & feel").
+* **Orquestador de Código (IA):** Gemini 3 Pro (High)
+    * Encargado de la implementación técnica, la sintaxis de React/TypeScript, la lógica de animación con Framer Motion y la resolución de errores de compilación.
 
-Currently, two official plugins are available:
+Esta colaboración demuestra cómo es posible **escalar la productividad** de un desarrollador senior, permitiéndole enfocarse en el *qué* y el *por qué*, mientras la IA resuelve el *cómo* con alta precisión y calidad.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧩 Componentes Implementados
+El playground incluye una serie de componentes interactivos diseñados con atención al detalle:
+* **Glass Card:** Tarjetas con efecto de vidrio esmerilado (glassmorphism) que responden al movimiento del mouse con una inclinación 3D sutil.
+* **Stepper (Indicador de Progreso):** Un flujo de 4 pasos ('Datos', 'Envío', 'Pago', 'Confirmación') con líneas de conexión animadas y estados de completado.
+* **Toggle Switch:** Interruptores de estado con transiciones fluidas de color y posición (spring physics).
+* **Floating Input:** Campos de texto modernos donde la etiqueta flota y se escala al enfocar, mejorando la claridad visual.
 
-## React Compiler
+## 🛠️ Stack Tecnológico
+* **Core:** React 19 + TypeScript
+* **Build Tool:** Vite
+* **Estilos:** Tailwind CSS v3
+* **Animaciones:** Framer Motion
+* **Iconos:** Lucide React
+* **Despliegue:** Firebase Hosting
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📖 Bitácora de Desarrollo
+La trazabilidad de las decisiones de diseño y código está documentada en el historial de conversación con el agente.
+* [Descargar Bitácora de Metodología AI-First](https://docs.google.com/document/d/1GWeKMj-biB39Tht8joKQIls-YtF1WNYT-Vss4nx0FvQ/edit?usp=sharing)
+---
+*Desarrollado en Google Antigravity Labs.*
