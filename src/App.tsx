@@ -12,7 +12,7 @@ function App() {
     <div className="min-h-screen bg-slate-900 text-slate-50 selection:bg-blue-500/30">
       <Header />
 
-      <main className="pt-24 px-8 max-w-7xl mx-auto pb-20">
+      <main className="pt-24 px-8 max-w-7xl mx-auto pb-8">
         <section id="inicio" className="mb-20 text-center">
           <h1 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 pb-2">
             UI Playground
@@ -74,12 +74,12 @@ function App() {
           </div>
         </section>
         {/* Footer Credits */}
-        <footer className="mt-20 py-8 text-center text-slate-500 text-sm border-t border-slate-800/50">
+        <footer className="mt-20 py-6 text-center text-slate-500 text-sm border-t border-slate-800/50">
           <p>
             Desarrollado con metodología <span className="text-blue-400 font-medium">AI-First</span> en Google Antigravity.
           </p>
           <p className="mt-2">
-            Diseño y UX por <span className="text-slate-300">JVR_9</span> • Orquestación de Código por <span className="text-purple-400">Gemini 3 Pro</span>
+            Diseño y UX por <span className="text-slate-300">Javier Espinoza</span> • Orquestación de Código por <span className="text-purple-400">Gemini 3 Pro</span>
           </p>
         </footer>
       </main>
